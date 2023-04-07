@@ -1,0 +1,175 @@
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+
+
+   Intorduction of Linux
+
+Linux is a free and open-source operating system (OS) based on the Unix operating system. It was first released on September 17, 1991, by Linus Torvalds, a student at the University of Helsinki, Finland.
+
+Linux is known for its stability, security, and versatility, and it is widely used in various domains such as servers, desktops, mobile devices, embedded systems, and supercomputers. Linux is popular among developers, system administrators, and users who prefer a free and customizable operating system.
+
+Linux has a command-line interface (CLI) as well as a graphical user interface (GUI) that enables users to interact with the system using a mouse and keyboard. It supports various file systems, networking protocols, and hardware architectures, and it can run multiple applications simultaneously through a process called multitasking.
+
+Overall, Linux has become an essential part of the computing landscape, powering everything from personal computers to complex systems in businesses, governments, and research institutions. Its popularity and widespread adoption continue to grow, and it is expected to play an even greater role in the future of computing
+
+(i) Architecture Of Linux :
+
+
+
+Linux is based on a monolithic kernel architecture, which means that the kernel is responsible for managing system resources, including CPU, memory, I/O devices, and file systems. The kernel also provides an interface for user-space applications to interact with the system resources.
+
+The Linux kernel consists of several core components, including:
+
+Process management: The kernel is responsible for managing processes, which are the programs or tasks that are currently running on the system. It allocates resources, schedules tasks, and monitors their performance.
+
+Memory management: The kernel manages system memory, including virtual memory, which allows programs to use more memory than is physically available. It also handles memory allocation and deallocation.
+
+Device drivers: The kernel includes device drivers that enable the system to interact with hardware devices such as printers, scanners, and network adapters.
+
+File systems: The kernel supports various file systems, including ext4, NTFS, and FAT32, which allow users to store and access data on disk drives and other storage devices.
+
+Network stack: The kernel includes a network stack that provides support for networking protocols such as TCP/IP, allowing the system to connect to the internet and other networked devices.
+
+The Linux kernel is also modular, which means that it can be configured to include or exclude specific features based on the needs of the system. This modularity allows for greater flexibility and customization of the operating system.
+
+In addition to the kernel, Linux also includes a set of user-space tools and utilities, including shells, text editors, compilers, and graphical interfaces, that enable users to interact with the system and run applications. These tools are typically provided by distributions such as Ubuntu, Fedora, and Debian, which package the Linux kernel and other software components into a complete operating system that can be installed and used on a computer.
+
+
+
+
+
+
+
+
+
+
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ######################## Linux basic commands #######
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ####This Command is used the show the name of the kernel#####
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ uname 
+Linux
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ##his command is used for the Show the version of the kernel
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ uname -r
+5.15.0-1031-aws
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ $####  *This Command is use for the change of directory*
+0###: command not found
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ cd
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ cd DevopsTask
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ########## its states the current login user name
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ whoami
+ubuntu
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$  date command is used the show the date of the current Linux system
+Try 'date --help' for more information.
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ^C
+
+ubuntu@ip-172-31-86-243:~/DevopsTask$ date 
+Thu Apr  6 06:43:59 UTC 2023
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+Try 'cp --help' for more information.
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ls
+dec.sh  dev.sh  vaibhav
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ mkdir user
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ cp -r user/ vaibhav/
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ls 
+dec.sh  dev.sh  user  vaibhav
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ###### copy data from one dire to another
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ cp -r vaibhav*/ user/
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ cd user
+ubuntu@ip-172-31-86-243:~/DevopsTask/user$ ls
+vaibhav
+ubuntu@ip-172-31-86-243:~/DevopsTask/user$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask/user$ cd
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ ######use the command rename the file/folder
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ mkdir users customers 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ ls
+Devops-batch-3  DevopsTask  customers  devops  devops-batch-3  users
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ mv users customers 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ ls
+Devops-batch-3  DevopsTask  customers  devops  devops-batch-3
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ ###### create a multiple directories
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ mkdir gcp azure aws cloud
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ ls
+Devops-batch-3  DevopsTask  aws  azure  cloud  customers  devops  devops-batch-3  gcp
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ ############## create a number of directories 
+ubuntu@ip-172-31-86-243:~$ 
+ubuntu@ip-172-31-86-243:~$ cd DevopsTask
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ mkdir dir{1..10}
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ls
+dec.sh  dev.sh  dir1  dir10  dir2  dir3  dir4  dir5  dir6  dir7  dir8  dir9  user  vaibhav
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ###### remove all the files withe same name 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ rm -r dir*
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ls
+dec.sh  dev.sh  user  vaibhav
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ #### create a file withe particula path 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ mkdir -p aws/lamda/sbucket
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ cd aws/lamda/sbucket 
+ubuntu@ip-172-31-86-243:~/DevopsTask/aws/lamda/sbucket$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask/aws/lamda/sbucket$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask/aws/lamda/sbucket$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask/aws/lamda/sbucket$ cd ../../..
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ ls
+aws  dec.sh  dev.sh  user  vaibhav
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
+ubuntu@ip-172-31-86-243:~/DevopsTask$ 
